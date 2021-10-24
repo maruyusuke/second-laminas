@@ -1,13 +1,13 @@
 <?php
 
-namespace Blog;
 
+namespace Test;
 
 class Module
 {
-  public function getConfig ()
+  public function getConfig(): array
   {
     return include __DIR__ . '/../config/module.config.php';
-    
   }
+
 }
