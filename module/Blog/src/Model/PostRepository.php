@@ -38,7 +38,6 @@ class PostRepository implements PostRepositoryInterface
      */
     public function findAllPosts()
     {
-        // TODO: Implement findAllPosts() method.
       return array_map(function ($post) {
         return new Post(
               $post['title'],
@@ -53,7 +52,6 @@ class PostRepository implements PostRepositoryInterface
      */
     public function findPost($id)
     {
-        // TODO: Implement findPost() method.
       if (! isset($this->data[$id])) {
           throw new DomainException(sprintf('Post by id "%s" not found', $id));
       }
